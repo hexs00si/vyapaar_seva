@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Upload Image</title>
+  <link href="{{ url_for('static', filename='css/upload.css') }}" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center">Upload Image</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data" class="mt-5">
+      <div class="form-group">
+        <input type="file" name="file" class="form-control-file" />
+      </div>
+      <button type="submit" class="btn btn-primary">Upload</button>
+    </form>
+
+    {% if final_image_filename %}
+    <div class="mt-5">
+      <h2 class="text-center">Enhanced Image</h2>
+      <img src="{{ url_for('static', filename=final_image_filename) }}" class="img-fluid mx-auto d-block mt-3" alt="Enhanced Image" />
+    </div>
+    {% endif %}
+
+    {% if error %}
+    <div class="alert alert-danger mt-3" role="alert">{{ error }}</div>
+    {% endif %}
+  </div>
+</body>
+</html>
