@@ -19,7 +19,8 @@
     {% if final_image_filename %}
     <div class="mt-5">
       <h2 class="text-center">Enhanced Image</h2>
-      <img src="{{ url_for('static', filename=final_image_filename) }}" class="img-fluid mx-auto d-block mt-3" alt="Enhanced Image" />
+      <img src="{{ url_for('static', filename='images/' + final_image_filename) }}" class="img-fluid mx-auto d-block mt-3" alt="Enhanced Image">
+            </div>
     </div>
     {% endif %}
 
