@@ -1,18 +1,55 @@
- /* Adjust height of the container */
- .container {
-    height: 100vh;
-}
-/* Center the content vertically */
-.vertical-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-/* Style for the uploaded image */
-#uploadedImage {
-    max-width: 50%;
-    max-height: 50vh;
-    border: 1px solid #ccc;
+body {
+    font-family: 'Georgia', serif;
+    background-color: #ffffff;
+    color: #212529;
+   }
+   
+   .container {
+    max-width: 800px;
     margin: 0 auto;
-}
+    padding: 20px;
+   }
+   
+   /* Heading Styles */
+   h1 {
+    font-size: 3rem;
+    color: #343a40;
+    text-align: center;
+    margin-bottom: 20px;
+   }
+   
+   /* Form Styles */
+   .upload-section {
+    margin-bottom: 30px;
+   }
+   
+   .form-group {
+    margin-bottom: 20px;
+   }
+   
+   .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+   }
+   
+   /* Enhanced Image Section */
+   .enhanced-image-section {
+    text-align: center;
+   }
+   
+   .img-fluid {
+    max-width: 100%;
+    height: auto;
+   }
+   
+   /* Error Section */
+   .error-section {
+    text-align: center;
+   }
+   
+   .alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+   }
